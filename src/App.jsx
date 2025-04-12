@@ -2,17 +2,34 @@ import { useState } from "react";
 
 import "./App.css";
 import Navbar from "./components/navbar";
-import Body from "./components/body";
+import Home from "./components/home";
+import Certification from "./components/certification";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [section,setSection]=useState("home")
+
+  const renderSection = () => {
+    switch (section) {
+      case "home":
+        return <Home />;
+      case "certification":
+        return <Certification />;
+      case "socials":
+        return <Socials />;
+      case "projects":
+        return <Projects />;
+      default:
+        return <Home />;
+    }
+  };
+ 
+ 
 
   
 
   return (<>
-  <Navbar />
-  <Body/>
-  
+  <Navbar onNavchange={setSection}/>
+{renderSection()}
   
   
   </>);

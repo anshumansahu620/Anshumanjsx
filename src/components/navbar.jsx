@@ -1,6 +1,6 @@
 import "./navbar.css";
 
-export default function Navbar({home,projects,socials,certification}) {
+export default function Navbar({ onNavchange }) {
   return (
     <>
       {" "}
@@ -10,11 +10,10 @@ export default function Navbar({home,projects,socials,certification}) {
         </div>
 
         <ul>
-          <li>home</li>
-          <li>projects</li>
-          <li>socials</li>
-
-          <li>certification</li>
+          <li onClick={() => onNavchange("home")}>home</li>
+          <li onClick={() => onNavchange("projects")}>projects</li>
+          <li onClick={() => onNavchange("certification")}>certification</li>
+          <li onClick={() => onNavchange("socials")}>socials</li>
         </ul>
       </nav>{" "}
     </>
