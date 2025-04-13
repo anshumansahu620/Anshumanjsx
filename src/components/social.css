@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+
+.social{
+    height: 250x;
+    width: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    
+
+
+}
+
+.holder{
+    display: flex;
+
+    flex-direction: row;
+    gap: 5rem;;
+}
+
+.social a{
+text-decoration: none;
+color:black
+}
+
+
+
+.icon{
+    height: 120px;
+    width: 120px;
+    border:transparent;
+
+
+}
+.icon:hover{
+    border:transparent;
+    cursor:pointer;
+}

@@ -3,11 +3,9 @@ import "./navbar.css";
 export default function Navbar({ onNavchange }) {
   return (
     <>
-      {" "}
+      
       <nav>
-        <div className="logo">
-          <img src="/logo.jpg" alt="eljke" />
-        </div>
+        
 
         <ul>
           <li onClick={() => onNavchange("home")}>home</li>

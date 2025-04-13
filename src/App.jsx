@@ -4,6 +4,8 @@ import "./App.css";
 import Navbar from "./components/navbar";
 import Home from "./components/home";
 import Certification from "./components/certification";
+import Socials from "./components/socials";
+import Projects from "./components/Project";
 
 function App() {
   const [section,setSection]=useState("home")
