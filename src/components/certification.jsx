@@ -4,7 +4,6 @@ import styled from "styled-components";
 export default function Certification() {
   return (
     <>
-      <h2>My Certifications</h2>
       <Display>
         <Card
           title="IBM certificate"

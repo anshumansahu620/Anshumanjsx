@@ -38,10 +38,6 @@ body{
 }
 
 
-.card{
-  position: fixed;
-  z-index: 1000;
-}
 
 
 .imgcontainer{
@@ -51,7 +47,9 @@ body{
   
   border-radius:10px;
 }
-.card{
+.card {
+  position: fixed;
+  z-index: 1000;
   height: max-content;
   width: max-content;
   background-color: white;
@@ -84,9 +82,7 @@ body{
   font-family: "Poppins", sans-serif;
 }
 
-.secondary::-webkit-scrollbar {
- 
-}
+
 
 .aboutme{
   background:white;
@@ -119,4 +115,76 @@ li{
 li:hover{
   background-color: white;
   font-size: 16px;
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+  }
+
+  .intro,
+  .secondary {
+    width: 75%;
+    height: auto;
+    display: block;
+    align-items: center;
+  }
+
+  .intro{
+    z-index: 0;
+    display: flex;
+    align-items: center;
+  }
+  .card {
+    position: static;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro img,
+  .imgcontainer {
+  
+    width: 300px;
+    height: auto;
+  }
+.imgcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+  .secondary {
+    height: auto;
+    overflow: visible;
+  }
+
+  .aboutme {
+    width: 95%;
+    padding: 15px;
+  }
+
+  /* 🔽 Font size adjustments */
+  .introtext h3 {
+    font-size: 1.2rem;
+  }
+
+  .introtext h4 {
+    font-size: 1rem;
+  }
+
+  .aboutme h4 {
+    font-size: 1.1rem;
+  }
+
+  .aboutme p,
+  .aboutme li {
+    font-size: 0.95rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
 }
